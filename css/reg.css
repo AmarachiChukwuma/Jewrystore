@@ -1,0 +1,240 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+  body{
+    /* background: brown; */
+    font-family: 'Inter UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  .page{
+    background: #e2e2e5;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    position: absolute;
+    place-content: center;
+    width: calc(100% - 40px);
+  }
+  @media (max-width: 767px) {
+    .page{
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+  }
+  .container{
+    display: flex;
+    height: 320px;
+    margin: 0 auto;
+    width: 640px;
+  }
+  @media (max-width: 767px) {
+    .container{
+        flex-direction: column;
+        height: 630px;
+        width: 320px;
+    }
+  }
+  .left{
+    background: white;
+    height: calc(100% - 40px);
+    top: 75px;
+    position: relative;
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+    .left{
+        height: 100%;
+        left: 20px;
+        width: calc(100% - 40px);
+        max-height: 270px;
+    }
+  }
+  .login{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px 40px 40px;
+    /* -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate; */
+  }
+  .eula {
+    color: #999;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 40px;
+    text-align: center;
+  }
+  .form-for{
+    margin-top: 1em;
+  }
+
+
+  .right {
+    background: #474A59;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+    height: 140%;
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+    .right {
+      flex-shrink: 0;
+      height: 150%;
+      width: 100%;
+      max-height: 350px;
+    }
+  }
+
+  .form{
+    margin: 40px;
+    position: absolute;
+  }
+  label{
+    color: #c2c2c5;
+    display: block;
+    font-size: 14px;
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  input {
+    background: transparent;
+    border: 0;
+    color: #f2f2f2;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+  }
+  input::-moz-focus-inner { 
+    border: 0; 
+  }
+
+  .forgot-pass{
+    text-decoration: none;
+    color: white;
+  }
+  .form-link{
+    margin-top: 1em;
+  }
+  #signup-btn{
+    flex-basis: 48%;
+    background: #ff6b6b;
+    color: #fff;
+    height: 40px;
+    border-radius: 16px;
+    border: 0;
+    font-size: 20px;
+    outline: 0;
+    margin-top: 15px;
+    margin-left: 4em;
+    cursor: pointer;
+    /* color: #707075;
+    margin-top: 40px;
+    transition: color 300ms; */
+  }
+  #signup-btn:focus{
+    color: #762929;
+  }
+  #signup-btn:active{
+    color:  #d0d0d2;
+  }
+
+  #login-btn{
+    flex-basis: 48%;
+    background: #ff6b6b;
+    color: #fff;
+    height: 40px;
+    border-radius: 16px;
+    border: 0;
+    font-size: 20px;
+    outline: 0;
+    margin-top: 15px;
+    margin-left: 4em;
+    cursor: pointer;
+  }
+
+  #login-btn:focus{
+    color: #f2f2f2;
+  }
+  #login-btn:active{
+    color:  #d0d0d2;
+  }
+
+  /* loggedout */
+  .form-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-content h1{
+    text-align: center;
+  }
+  .btn-f{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.btn-f button{
+    flex-basis: 48%;
+    background: #ff6b6b;
+    color: #fff;
+    height: 40px;
+    border-radius: 16px;
+    border: 0;
+    font-size: 20px;
+    outline: 0;
+    cursor: pointer;
+}
+.btn-f button:hover{
+    color: white;
+    transform: translateY(-.5rem);
+}
+.signin-link{
+  color: #ff6b6b;
+  margin-left: 6em;
+  padding-top: 2em;
+}
+.line{
+    position: relative;
+    background-color: #d4d4d4;
+    margin: 36px 0;
+    height: 1px;
+    width: 100%;
+}
+.line::before{
+    content: 'or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    color:#963030;
+    padding: 0px 15px;
+    transform: translate(-50%, -50%);
+}
+.form-con p{
+    color: #fff;
+    font-size: 20px;
+}
+@media only screen and (max-width: 896px)  {
+    .form-con p{
+        color: #fff;
+        font-size: 12px;
+    }
+    form a{
+        margin-top: 5px;
+        text-decoration: none;
+        color: #963030;
+        font-size: px;
+        background: #fff;
+        border-radius: 3px;
+        margin-left: 10px;
+        text-align: center;
+        padding: 7px;
+    }
+}
