@@ -130,6 +130,7 @@ h4{
     display: flex;
     align-items: center;
 }
+
 .flexcol{
     display: flex;
     flex-direction: column;
@@ -252,7 +253,7 @@ h4{
 } 
 .trigger{
     font-size: 1.5em;
-    display: flex;
+    display: none;
     padding: 0.25em;
     margin-right: 0.5em;
 } 
@@ -1040,6 +1041,9 @@ footer #myBtn:hover{
     .header-nav .right li > a{
         margin-left: 1em;
     } 
+    .trigger{
+        display: block;
+    } 
 
     .mega{
         position: absolute;
@@ -1156,13 +1160,16 @@ footer #myBtn:hover{
     } 
 }
 
+
+/* on mobile */
+
 @media screen and (max-width: 968px) {
     .mega .wrapper{
         display: flex;
     } 
     .mega{
         position: absolute;
-        width: 65%;
+        width: 70%;
         height: 50%;
         top: auto;
         left: 4.3em;
@@ -1194,6 +1201,27 @@ footer #myBtn:hover{
     .mega .flexcol{
         padding-top: 1em;
         margin-top: 1em;
+        padding-left: 6em;
        
     }
+    .trigger{
+        display: block;
+    } 
+    .mega h1{
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    } 
+    @-webkit-keyframes glow {
+        from {
+         color: #fff;
+       text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b, 0 0 40px #ff6b6b, 0 0 50px #ff6b6b, 0 0 60px #ff6b6b, 0 0 70px #ff6b6b, 0 0 90px #ff6b6b;
+     }
+     
+     to {
+        color: gray;
+       text-shadow: 0 0 20px #ff6b6b, 0 0 30px #ff6b6b, 0 0 40px #ff6b6b, 0 0 50px #ff6b6b, 0 0 60px #ff6b6b, 0 0 70px #ff6b6b, 0 0 80px #ff6b6b, 0 1 90px #ff6b6b;
+     }
+   } 
+
 }

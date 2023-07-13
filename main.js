@@ -28,7 +28,7 @@ function scrollFunction(){
     } else {
         mybutton.style.display = "none";
     }
-}
+};
 
 
 
