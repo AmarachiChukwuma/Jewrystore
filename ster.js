@@ -32,27 +32,29 @@ const firebaseConfig = {
    });
 });
 
+
 // log in
-const loginBtn = document.querySelector('#login-btn');
-loginBtn.addEventListener('click', e => {
-e.preventDefault();
+// const loginBtn = document.querySelector('#login-btn');
+// loginBtn.addEventListener('click', e => {
+// e.preventDefault();
 
-const email = document.querySelector('#email').value;
-const password = document.querySelector('#password').value;
+// const email = document.querySelector('#email').value;
+// const password = document.querySelector('#password').value;
 
-auth.signInWithEmailAndPassword(email, password)
-  .then(cred => {
-    console.log('logged in user!');
-    alert('logged in user!')
-  })
-  .catch(error => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    console.log(errorCode);
-    console.log(errorMessage);
-    alert(errorMessage)
-  });
-});
+// auth.logInWithEmailAndPassword(email, password)
+//   .then(cred => {
+//     console.log('logged in user!');
+//     location.reload();
+//     alert('logged in user!')
+//   })
+//   .catch(error => {
+//     var errorCode = error.code;
+//     var errorMessage = error.message;
+//     console.log(errorCode);
+//     console.log(errorMessage);
+//     alert(errorMessage)
+//   });
+// })
 
 
 
