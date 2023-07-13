@@ -253,10 +253,20 @@ h4{
 } 
 .trigger{
     font-size: 1.5em;
-    display: none;
+    display: flex;
     padding: 0.25em;
     margin-right: 0.5em;
 } 
+.trigger span{
+    display: none;
+}
+/* naaav */
+
+
+
+
+
+/* logo */
 .logo a{
     font-family: 'poppins';
     font-size: 1.75em;
@@ -1051,9 +1061,9 @@ footer #myBtn:hover{
         height: auto;
         top: auto;
         left: 5em;
-        margin-top: 2em;
+        margin-top: 1em;
         right: 0;
-        padding: 2.5em;
+        padding: 2.2em;
         line-height: 2em;
         background-color: var(--light-bg-color);
         box-shadow: rgb(0 0 0 / 20%)  0 30px 20px .30px;
@@ -1078,10 +1088,10 @@ footer #myBtn:hover{
         animation: glow 2s ease-in-out infinite alternate;
     } 
     .mega h4 {
-        padding-top: 3rem;
+        padding-top: 1rem;
         font-size: 2.2em;
         padding-left: 3.6em;
-        padding-bottom: 1em;
+        padding-bottom: 0.5em;
         font-weight: var(--fw8);
         color: var(--dark-color);
     }
@@ -1177,7 +1187,12 @@ footer #myBtn:hover{
         right: 0;
         padding: 2.5em;
         line-height: 2em;
-        background-color: var(--light-bg-color);
+        background: linear-gradient(to top, rgb(0,0,0,0.5)50%, rgb(0,0,0,0.5)50%), url(/image/pic\ \(2\).jpg);
+        /* background: linear-gradient(); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* background-color: var(--light-bg-color); */
         box-shadow: rgb(0 0 0 / 20%)  0 30px 20px .30px;
         z-index: 100;
     }
@@ -1198,15 +1213,29 @@ footer #myBtn:hover{
         /* font-family: 'Codystar'; */
         
     }
+    .header-top{
+        display: none;
+    }
+    /* .wrapper .main-links li{
+        display: none;
+    } */
+    /* .right ul li > li{
+        display: none;
+    } */
     .mega .flexcol{
+        text-align: center;
         padding-top: 1em;
         margin-top: 1em;
-        padding-left: 6em;
+        padding-left: 7em;
        
     }
-    .trigger{
-        display: block;
-    } 
+    .mega .flexcol .primary-button{
+        margin-left: 3em;
+    }
+    .trigger span{
+        display: flex;
+    }
+
     .mega h1{
         -webkit-animation: glow 2s ease-in-out infinite alternate;
         -moz-animation: glow 2s ease-in-out infinite alternate;
