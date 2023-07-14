@@ -41,7 +41,7 @@ e.preventDefault();
 const email = document.querySelector('#email').value;
 const password = document.querySelector('#password').value;
 
-auth.logInWithEmailAndPassword(email, password)
+   auth.loginWithEmailAndPassword(email, password)
   .then(cred => {
     console.log('logged in user!');
     location.reload();
@@ -54,7 +54,7 @@ auth.logInWithEmailAndPassword(email, password)
     console.log(errorMessage);
     alert(errorMessage)
   });
-})
+});
 
 
 
