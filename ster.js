@@ -92,8 +92,8 @@ const firebaseConfig = {
 
 
 //   signup
-    const signupBtn = document.getElementById('signup-btn');
-    signupBtn.addEventListener('click', e => {
+    const signUpBtn = document.getElementById('signup-btn');
+    signUpBtn.addEventListener('click', e => {
     e.preventDefault();
 
     const name = document.getElementById('name').value;
@@ -106,14 +106,6 @@ const firebaseConfig = {
          console.log("user", user.email);
          alert("user logged in")
          window.location = "index.html";
-
-
-
-
-
-   //  console.log('User signed up!');
-   //  location.reload();
-   //  alert('user signup')
   })
    .catch((error) => {
    var errorCode = error.code;
@@ -126,8 +118,8 @@ const firebaseConfig = {
 
 
 // log in
-const signInBtn = document.getElementById('signin-btn');
-signInBtn.addEventListener('click', e => {
+const signinbtn = document.getElementById("signin-btn");
+signinbtn.addEventListener('click', e => {
    e.preventDefault();
 
    const email = document.getElementById('email').value;

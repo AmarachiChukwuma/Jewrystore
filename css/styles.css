@@ -418,21 +418,27 @@ h4{
 } */
 .new_pop-overlay{
     position: absolute;
-    margin-top: 8em;
-    width: 60%;
-    height: 24%;
-    background-color: rgba(245, 178, 178, 0.5);
+    margin-top: 14em;
+    width: 80%;
+    height: 29.1%;
+    background-color:  rgba(138, 138, 138, .9);
+    transition: .3s;
 }
 .new_pop-overlay h2{
-    font-size: 1.2rem;
-    margin-bottom: 0.5em;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.8em;
     color: #fff;
     font-weight: 400;
 }
 .new_pop-overlay a{
-  margin-left: 1;
+  margin-left: 10em;
 }
-
+.new_pop-overlay:hover{
+    cursor: pointer;
+}
 
 /* banner */
 #banner{
