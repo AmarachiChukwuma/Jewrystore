@@ -47,6 +47,10 @@ loginBtn.addEventListener('click', e => {
       location.reload();
       alert('logged in user')
    })
+   .catch(error => {
+      console.log(error.message);
+      alert(errorMessage)
+   })
 });
 
 
