@@ -22,7 +22,7 @@ const firebaseConfig = {
   const auth = firebase.auth();
  
 //   signup
-let signUpButton = document.getElementById("signup-btn");
+let signUpBtn = document.getElementById("signup-btn");
 signUpButton.addEventListener("click", (e) => {
    e.preventDefault();
    console.log("clicked");
@@ -51,10 +51,41 @@ signUpButton.addEventListener("click", (e) => {
 });
 
 
+// signin
 
+let signinBtn = document.getElementById("signin-btn");
+signinBtn.addEventListener("click", (e) => {
+   e.preventDefault();
+   console.log("clicked");
 
+   var email = document.getElementById("signin-btn");
+   var password = document.getElementById("password");
 
+   auth
+   .signInUserWithEmailAndPassword(email.value, password.value)
+   .then((userCredential) => {
+      var user = userCredential.user;
+      console.log("user", user.email);
+      alert("user logged in")
+      window.location = "index.html";
+   })
 
+   .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      alert(errorMessage)
+   })
+});
+
+// keeping track of auth state
+auth.onAuthStateChanged(user => {
+   if (user) {
+      console.log(user.email + "is logged in!");
+   } else {
+      console.log('User is looged out!');
+      alert('user loggedout!');
+   }
+})
 
 
 
