@@ -53,8 +53,8 @@ signUpButton.addEventListener("click", (e) => {
 
 // signin
 
-let signinBtn = document.getElementById("signin-btn");
-signinBtn.addEventListener("click", (e) => {
+let signInBtn = document.getElementById("signin-btn");
+signInBtn.addEventListener("click", (e) => {
    e.preventDefault();
    console.log("clicked");
 
