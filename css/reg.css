@@ -144,7 +144,7 @@
     color:  #d0d0d2;
   }
 
-  #login-btn{
+  #signin-btn{
     flex-basis: 48%;
     background: #ff6b6b;
     color: #fff;
@@ -158,10 +158,10 @@
     cursor: pointer;
   }
 
-  #login-btn:focus{
+  #signin-btn:focus{
     color: #f2f2f2;
   }
-  #login-btn:active{
+  #signin-btn:active{
     color:  #d0d0d2;
   }
 
