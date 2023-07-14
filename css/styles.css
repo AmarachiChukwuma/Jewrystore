@@ -1278,7 +1278,18 @@ footer #myBtn:hover{
      }
    } 
 
+   #news .roww{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
+
+
+}
+
+
+
+
 @media screen and (max-width: 796px) {
     .mega .wrapper{
         display: flex;
