@@ -14,7 +14,8 @@ body{
 
   /* dark and light mode */
   #icone{
-    width: 18px;
+    width: 15px;
+    margin-right: 9em;
     cursor: pointer;
     margin-left: 2em;
   }
@@ -240,15 +241,16 @@ h4{
    right: -1em;
    line-height: 2em;
    background-color: var(--white-color);
-    border: 1px solid var(--border-color); 
+   border: 1px solid var(--border-color); 
    z-index: 1;
    display: none;
 }
 .header-top .right ul ul li a{
-    padding: 0.25em 1em ;
+    padding: 0.20em 0.19em ;
 }
 .header-top .right ul ul li.current a{
-    background-color: var(--border-color);
+    background-color: transparent;
+    padding-right: 2em;
 } 
 .header-top li:hover ul{
     display: block;
@@ -267,7 +269,7 @@ h4{
 .trigger span{
     display: none;
 }
-/* naaav */
+
 
 
 
@@ -315,7 +317,7 @@ h4{
     line-height: 100px;
     gap: 2em;
 }
-.fly-item{
+.flyitem{
     position: absolute;
     height: 16px;
     font-weight: var(--font-smaller);
@@ -332,9 +334,12 @@ h4{
 }
 .header-nav .right .icon-large{
     position: relative;
-    padding-right: 7em;
+    padding-right: 2em;
 }
-.header-nav .right .fly-item{
+.header-nav .right .icon-text{
+    margin-right: 3em;
+}
+.header-nav .right .flyitem{
     top: 0;
     right: 16px;
     width: 16px;
@@ -388,37 +393,44 @@ h4{
     justify-content: center;
 }
 .newe_pop img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     transition: transform .3s;
 }
 .newe_pop :hover img{
     transform: scale(1.1);
 }
-.new_pop-overlay{
+/* .new_pop-overlay{
     position: absolute;
     left: 0;
-    height: 100%;
-    width: 100%;
-    padding-left: 2em;
-    margin-top: 25em;
+    height: 80%;
+    width: 80%;
+    padding-left: 1em;
+    margin-top: 3em;
     transition: .3s;
 }
 .new_pop-overlay:hover{
     bottom: 0;
     cursor: pointer;
-    padding-top: 17em;
+    padding-top: 12em;
     padding-left: 6em;
+    background-color: rgba(245, 178, 178, 0.5);
+} */
+.new_pop-overlay{
+    position: absolute;
+    margin-top: 8em;
+    width: 60%;
+    height: 24%;
     background-color: rgba(245, 178, 178, 0.5);
 }
 .new_pop-overlay h2{
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5em;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
 }
 .new_pop-overlay a{
-  margin-left: 6em;
+  margin-left: 1;
 }
 
 
@@ -729,13 +741,13 @@ padding-left: 7em;
     padding: 2.5em;
     border: 2px solid var(--secondary-dark-color);
     border-radius: 7px;
-    max-width: 460px;
+    max-width: 480px;
     margin: 0 auto;
     margin-bottom: 2em;
-    /* height: 97%; */
+    height: 70%;
     /* flex: 0 0 33.3333%;*/
 }
-.banner .item{
+/* .banner .item{
     flex-direction: column;
     padding: 2.5em;
     max-width: 460px;
@@ -747,11 +759,11 @@ padding-left: 7em;
     padding: 2.5em;
     max-width: 450px;
     margin-bottom: 2em;
-}
-/* .products.mini .media{
-    width: 130px;
-    height: 160px;
 } */
+.products.mini .media .thmbnail{
+    width: 60%;
+    /* height: 160px; */
+}
 .products .content{
     display: flex;
     flex-direction: column;
@@ -1040,8 +1052,8 @@ footer #myBtn:hover{
     }
 } 
 @media screen and (min-width: 600px) {
-    .container{
-        padding: 0 2em;
+    .container-fluid{
+        padding: 0 1em;
     }
 
     .logo a{
@@ -1166,7 +1178,7 @@ footer #myBtn:hover{
         max-height: 450px;
     } 
     .products.big .media{ 
-        max-width: 475px;
+        max-width: 480px;
     }
     .products.mini .media{ 
         max-height: 475px;
@@ -1190,7 +1202,7 @@ footer #myBtn:hover{
         height: 50%;
         top: auto;
         left: 4.3em;
-        margin-top: 2em;
+        margin-top: 6em;
         right: 0;
         padding: 2.5em;
         line-height: 2em;

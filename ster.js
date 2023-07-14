@@ -34,27 +34,27 @@ const firebaseConfig = {
 
 
 // log in
-// const loginBtn = document.querySelector('#login-btn');
-// loginBtn.addEventListener('click', e => {
-// e.preventDefault();
+const loginBtn = document.querySelector('#login-btn');
+loginBtn.addEventListener('click', e => {
+e.preventDefault();
 
-// const email = document.querySelector('#email').value;
-// const password = document.querySelector('#password').value;
+const email = document.querySelector('#email').value;
+const password = document.querySelector('#password').value;
 
-// auth.logInWithEmailAndPassword(email, password)
-//   .then(cred => {
-//     console.log('logged in user!');
-//     location.reload();
-//     alert('logged in user!')
-//   })
-//   .catch(error => {
-//     var errorCode = error.code;
-//     var errorMessage = error.message;
-//     console.log(errorCode);
-//     console.log(errorMessage);
-//     alert(errorMessage)
-//   });
-// })
+auth.logInWithEmailAndPassword(email, password)
+  .then(cred => {
+    console.log('logged in user!');
+    location.reload();
+    alert('logged in user!')
+  })
+  .catch(error => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorCode);
+    console.log(errorMessage);
+    alert(errorMessage)
+  });
+})
 
 
 
@@ -79,61 +79,6 @@ auth.onAuthStateChanged(user => {
    }
 });
 
-
-
-
-
-// logform
-// var current = null;
-// document.querySelector('#email').addEventListener('focus', function(e) {
-//    if (current) current.pause();
-//    current = anime({
-//       targets: 'path',
-//       strokeDashoffset:
-//       {
-//          value: 0,
-//          duration: 700,
-//          easing: 'easeOutQuart'
-//       },
-//       strokeDasharray: {
-//          value: '240 1386',
-//          duration: 700,
-//          easing: 'easeOutQuart'
-//       }
-//    });
-// });
-// document.querySelector('#password').addEventListener('focus', function(e){
-//    if (current) current.pause();
-//    current = anime({
-//       targets: 'path',
-//       strokeDashoffset: {
-//          value: -336,
-//          duration:700,
-//          easing: 'easeOutQuart'
-//       },
-//       strokeDasharray: {
-//          value: '240 1386',
-//          duration: 700,
-//          easing: 'easeOutQuart'
-//       }
-//    });
-// });
-// document.querySelector('#submit').addEventListener('focus', function(e) {
-//    if (current) current.pause();
-//    current = anime({
-//       targets: 'path',
-//       strokeDashoffset: {
-//         value: -730,
-//         duration: 700,
-//         easing: 'easeOutQuart'
-//       },
-//       strokeDasharray: {
-//          value: '530 1386',
-//          duration: 700,
-//          easing: 'easeOutQuart'
-//       }
-//    });
-// });
 
 
 
