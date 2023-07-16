@@ -495,6 +495,83 @@ footer #myBtn:hover{
   background-color: #555;
 }
 
+
+
+/* loggedout */
+.form-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-content h1{
+  text-align: center;
+}
+.btn-f{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+.btn-f button{
+  flex-basis: 48%;
+  background: #ff6b6b;
+  color: #fff;
+  height: 40px;
+  border-radius: 16px;
+  border: 0;
+  font-size: 20px;
+  outline: 0;
+  cursor: pointer;
+}
+.btn-f button:hover{
+  color: white;
+  transform: translateY(-.5rem);
+}
+.signin-link{
+color: #ff6b6b;
+margin-left: 6em;
+padding-top: 2em;
+}
+.line{
+  position: relative;
+  background-color: #d4d4d4;
+  margin: 36px 0;
+  height: 1px;
+  width: 100%;
+}
+.line::before{
+  content: 'or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  color:#963030;
+  padding: 0px 15px;
+  transform: translate(-50%, -50%);
+}
+.form-con p{
+  color: #fff;
+  font-size: 20px;
+}
+/* logged out */
+@media only screen and (max-width: 896px)  {
+  .form-con p{
+      color: #fff;
+      font-size: 12px;
+  }
+  form a{
+      margin-top: 5px;
+      text-decoration: none;
+      color: #963030;
+      font-size: px;
+      background: #fff;
+      border-radius: 3px;
+      margin-left: 10px;
+      text-align: center;
+      padding: 7px;
+  }
+}
+
 /* footer responsivness */
 @media (max-width: 867px) {
   .footer-mam{

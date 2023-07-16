@@ -165,7 +165,7 @@
     color:  #d0d0d2;
   }
 
-  /* loggedout */
+  loggedout
   .form-content{
     display: flex;
     justify-content: center;
