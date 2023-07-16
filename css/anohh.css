@@ -50,7 +50,8 @@ body{
   width: 15px;
   margin-right: 9em;
   cursor: pointer;
-  margin-left: 2em;
+  margin-left: 8em;
+  float: right;
 }
 .dark-theme{
   background: black;
@@ -108,6 +109,10 @@ header .sidenav{
 span{
   display: none;
 }
+
+
+
+
 /* header responsiveness */
 @media only screen and (max-width: 1320px) {
   header{
@@ -184,11 +189,16 @@ span{
 
 /* mega */
 .mega .flexcol{
-  margin-top: 8em;
+  margin-top: 6em;
   margin-bottom: 1.5em;
- display: flex;
- justify-content: center;
- align-items: center;
+  margin-left: 8em;
+}
+.mega .wrapper{
+  margin-left: 9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .mega{
   position: absolute;
@@ -244,6 +254,11 @@ to {
     left: 1.3em;
     width: 90%;
   }
+  /* .mega .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
 }
 
 
