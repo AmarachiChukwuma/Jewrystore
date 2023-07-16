@@ -45,6 +45,21 @@ body{
   background: #e5e8ec;
 }
 
+/* dark and light mode */
+#icone{
+  width: 15px;
+  margin-right: 9em;
+  cursor: pointer;
+  margin-left: 2em;
+}
+.dark-theme{
+  background: black;
+  color: var(--light-bg-color);
+}
+
+
+
+
 /* header */
 header{
   width: 100%;
