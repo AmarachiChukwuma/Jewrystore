@@ -41,53 +41,53 @@ const firebaseConfig = {
 
 
 // log in
-const signInBtn = document.getElementById("signin-btn");
-signInBtn.addEventListener('click', e => {
-   e.preventDefault();
+// const signInBtn = document.getElementById("signin-btn");
+// signInBtn.addEventListener('click', e => {
+//    e.preventDefault();
 
-   const email = document.getElementById('email').value;
-   const password = document.getElementById('password').value;
+//    const email = document.getElementById('email').value;
+//    const password = document.getElementById('password').value;
 
-   auth.signInWithEmailAndPassword(email, password)
-   .then( (userCredential) => {
-      var user = userCredential.user;
-      console.log("user", user.email);
-      alert("user logged in")
-      location.reload();
-      window.location = "index.html";
-   })
-   .catch(error => {
-      console.log(error.message);
-      alert(errorMessage)
-   })
-});
+//    auth.signInWithEmailAndPassword(email, password)
+//    .then( (userCredential) => {
+//       var user = userCredential.user;
+//       console.log("user", user.email);
+//       alert("user logged in")
+//       location.reload();
+//       window.location = "another.html";
+//    })
+//    .catch(error => {
+//       console.log(error.message);
+//       alert(errorMessage)
+//    })
+// });
 
 
 
 
 // logout
-const logoutBtn = document.getElementById('logout-btn');
-logoutBtn.addEventListener('click', e => {
-   e.preventDefault();
-   auth.signOut();
-   console.log('User signed out!');
-   alert('logged out');
-   window.location = "login.html"
-})
+// const logoutBtn = document.getElementById('logout-btn');
+// logoutBtn.addEventListener('click', e => {
+//    e.preventDefault();
+//    auth.signOut();
+//    console.log('User signed out!');
+//    alert('logged out');
+//    window.location = "login.html"
+// })
 
 
 // keeping track of auth state
-auth.onAuthStateChanged(user => {
-   if (user) {
-      console.log(user.email + "is logged in!");
-      window.location = "index.html";
-   } else {
-      console.log('User is logged out!');
-      alert('user loggedout!');
-      // window.location = "index.html";
-   }
+// auth.onAuthStateChanged(user => {
+//    if (user) {
+//       console.log(user.email + "is logged in!");
+//       window.location = "index.html";
+//    } else {
+//       console.log('User is logged out!');
+//       alert('user loggedout!');
+//       // window.location = "index.html";
+//    }
    
-});
+// });
 
 
 
