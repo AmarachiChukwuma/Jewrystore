@@ -101,7 +101,7 @@ document
 });
 
 
-// signin
+
 const login = () => {
     const email = document.querySelector("#login-email").value;
     const password = document.querySelector("#login-password").value;
