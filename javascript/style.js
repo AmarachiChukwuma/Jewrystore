@@ -192,7 +192,15 @@
 // };
 
 
-
+// logout
+// const logoutBtn = document.getElementById('logout-btn');
+// logoutBtn.addEventListener('click', e => {
+//    e.preventDefault();
+//    auth.signOut();
+//    console.log('User signed out!');
+//    alert('logged out');
+//    window.location = "login.html"
+// })
 
 
 
