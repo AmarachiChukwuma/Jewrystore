@@ -194,12 +194,11 @@ span{
   
   
 }
-/* .mega .wrapper{
-  display: block;
-  align-items: center;
+.mega .wrapper{
+  display: flex;
   justify-content: center;
-
-} */
+  align-items: center;
+}
 .mega{
   position: absolute;
   width: 86%;
@@ -238,10 +237,10 @@ to {
 }
 } 
 .mega h4 {
-  padding-top: 3rem;
+  padding-top: 1rem;
   font-size: 2.2em;
   padding-left: 1em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.4em;
   font-weight: var(--fw8);
   color: var(--light-bg-color);
 }
