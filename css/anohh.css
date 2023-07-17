@@ -190,16 +190,16 @@ span{
 /* mega */
 .mega .flexcol{
   margin-top: 6em;
-  margin-bottom: 1.5em;
+  
+  
   
 }
-.mega .wrapper{
-  margin-left: 8em;
-  display: flex;
+/* .mega .wrapper{
+  display: block;
   align-items: center;
   justify-content: center;
 
-}
+} */
 .mega{
   position: absolute;
   width: 86%;
@@ -208,7 +208,7 @@ span{
   left: 5em;
   margin-top: 6em;
   right: 0;
-  padding: 2.2em;
+  padding: 1em;
   line-height: 2em;
   background: linear-gradient(to top, rgb(0,0,0,0.5)50%, rgb(0,0,0,0.5)50%), url(/image/uni\ \(1\).jpg);
   background-repeat: no-repeat;
@@ -241,7 +241,7 @@ to {
   padding-top: 3rem;
   font-size: 2.2em;
   padding-left: 1em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.3em;
   font-weight: var(--fw8);
   color: var(--light-bg-color);
 }
@@ -251,7 +251,7 @@ to {
 } 
 @media screen and (max-width: 1320px) {
   .mega{
-    left: 1.3em;
+    /* left: 1.3em; */
     width: 90%;
   }
   /* .mega .wrapper{
