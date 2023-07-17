@@ -100,6 +100,8 @@ document
     }
 });
 
+
+// signin
 const login = () => {
     const email = document.querySelector("#login-email").value;
     const password = document.querySelector("#login-password").value;
@@ -129,7 +131,7 @@ document
 });
 
 const authenticate = (email, password) => {
-    const auth = firebase.quth();
+    const auth = firebase.auth();
     auth.signInWithEmailAndPassword(email, password);
     firebase
     .auth()
@@ -185,7 +187,7 @@ const fogotPassword = (email) => {
     alert("email sent");
     })
     .catch(function (error) {
-    alert("invalid email or bad network")
+        alert("invalid email or bad network")
     });
 };
 
@@ -236,7 +238,7 @@ function ready() {
     console.log(removeCartButtons)
     for(var i = 0; i < removeCartButtons.length; i++){
         var button = removeCartButtons[i]
-        button.addEventListener('click' removeCartItem)
+        // button.addEventListener('click' removeCartItem)
     }
 }
 

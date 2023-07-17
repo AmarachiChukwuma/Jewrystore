@@ -113,10 +113,13 @@ input[type=submit] {
     padding: 15px 0;
 }
 .forms-in{
-    width: 93%;
+    width: 100%;
     margin: 0 auto;
     color: #fff;
     padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .forms-in div{
     padding: 30px 20px;
