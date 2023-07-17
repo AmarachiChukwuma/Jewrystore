@@ -1,25 +1,43 @@
-function show(id) {
-    if(document.getElementById(id).style.display == 'none') {
-        document.getElementById(id).style.display= 'block';
-    } else{
-        document.getElementById(id).style.display = 'none';
-    }
-};
+// function show(id) {
+//     if(document.getElementById(id).style.display == 'none') {
+//         document.getElementById(id).style.display= 'block';
+//     } else{
+//         document.getElementById(id).style.display = 'none';
+//     }
+// };
 
-// submit button
-function Verify() {
-    var userRef = "AmicAble";
-    var passRef = "12ruthieAma";
+// // submit button
+// function Verify() {
+//     var userRef = "AmicAble";
+//     var passRef = "12ruthieAma";
 
-    var user = document.getElementById("username").value;
-    var pass = document.getElementById("password").value;
-    if(user == userRef || pass == passRef) {
-        alert("Loggedin")
-        window.location(index.html)
-    } else{
-        alert("It's seem you make a mistake...")
-    }
-};
+//     var user = document.getElementById("username").value;
+//     var pass = document.getElementById("password").value;
+//     if(user == userRef || pass == passRef) {
+//         alert("Loggedin")
+//         window.location(index.html)
+//     } else{
+//         alert("It's seem you make a mistake...")
+//     }
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
