@@ -36,11 +36,15 @@
     }
   }
   .left{
-    background: white;
+    /* background: white; */
     height: calc(100% - 40px);
     top: 75px;
     position: relative;
     width: 50%;
+    background: linear-gradient(to top, rgb(0,0,0,0.7)50%, rgb(0,0,0,0.7)50%), url(/image/pic\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
   }
   @media (max-width: 767px) {
     .left{
@@ -55,12 +59,13 @@
     font-weight: 900;
     text-align: center;
     margin: 50px 40px 40px;
+    color: #fff;
     /* -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate; */
   }
   .eula {
-    color: #999;
+    color: #f2f2f2;
     font-size: 20px;
     line-height: 1.5;
     margin: 40px;
