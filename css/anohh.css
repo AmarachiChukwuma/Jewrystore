@@ -189,13 +189,12 @@ span{
 
 /* mega */
 .mega .flexcol{
-  margin-top: 6em;
-  margin-left: 5em;
-}
-.mega .wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mega .contentes{
+  margin-top: 6em;
 }
 .mega{
   position: absolute;
@@ -248,14 +247,10 @@ to {
 } 
 @media screen and (max-width: 1320px) {
   .mega{
-    /* left: 1.3em; */
+    left: 1.3em;
     width: 90%;
   }
-  /* .mega .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
+  
 }
 
 
@@ -320,6 +315,7 @@ hr{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 18em;
 }
 #banner .containers{
   padding-left: 6em;
