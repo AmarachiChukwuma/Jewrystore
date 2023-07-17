@@ -194,7 +194,7 @@ span{
   margin-left: 8em;
 }
 .mega .wrapper{
-  margin-left: 9em;
+  /* margin-left: 4em; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -366,6 +366,77 @@ hr{
   transform: translateY(0);
   opacity: 1;
 }
+
+/* new collection */
+
+.new_container{
+  row-gap: 2rem;
+}
+.new h2{
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1.4em;
+  color: var(--dark-color);
+}
+
+.new_mens{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.new_mens-img{
+  width: 276px;
+  margin-bottom: var(--mb-3);
+}
+.new_title{
+  font-size: 2rem;
+  margin-bottom: .25rem;
+}
+
+.new_price{
+  display: block;
+  margin-bottom: var(--mb-3);
+}
+.new_sneaker{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.new_sneaker-card{
+  position: relative;
+  padding: 3.5rem 1.5rem;
+  background-color: #f2f3f5;
+  border-radius: .5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+}
+.new_sneaker-img{
+  width: 220px;
+}
+.new_sneaker-overlay{
+  position: absolute;
+  background-color: rgba(138, 138, 138, .2);
+  left: 0;
+  bottom: -100%;
+  height: 100%;
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: 600;
+  display: flex;
+  color: var(--light-bg-color);
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+.new_sneaker-card:hover .new_sneaker-overlay{
+  bottom: 0;
+}
+
+
+
 
 
 
