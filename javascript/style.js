@@ -143,6 +143,53 @@ const authenticate = (email, password) => {
     });
 };
 
+const showHomepage = () => {
+    document.querySelector("#registration-page").classList.add("hide");
+    document.querySelector("#login-page").classList.add("hide");
+    document.querySelector("#homepage").classList.remove("hide");
+};
+
+const signOut =() => {
+    firebase
+    .auth()
+    .signOut()
+    .then(function () {
+        location.reload();
+    })
+    .catch(function (error) {
+        alert("error signing out, check network conncetion");
+    });
+};
+
+auth.onAuthStateChanged((firebaseUser) => {
+    if (firebaseUser) {
+        showHomepage();
+    }
+});
+
+document
+.querySelector("#forgot-password")
+.addEventListener("click", () => {
+    const email = document.querySelector("#login-email").value;
+    if (email.trim() == "") {
+        alert("Enter Email");
+    } else {
+        fogotPassword(email);
+    }
+});
+
+const fogotPassword = (email) => {
+    auth 
+    .sendPasswordResetEmail(email)
+    .then(function () {
+    alert("email sent");
+    })
+    .catch(function (error) {
+    alert("invalid email or bad network")
+    });
+};
+
+
 
 
 
