@@ -190,9 +190,7 @@ span{
 /* mega */
 .mega .flexcol{
   margin-top: 6em;
-  
-  
-  
+  margin-left: 5em;
 }
 .mega .wrapper{
   display: flex;
