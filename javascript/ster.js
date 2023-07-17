@@ -27,7 +27,8 @@ const firebaseConfig = {
          var user = userCredential.user;
          console.log("user", user.email);
          alert("user signed Up")
-         // window.location = "index.html";
+         location.reload();
+         window.location = "another.html";
   })
    .catch((error) => {
    var errorCode = error.code;
