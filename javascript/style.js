@@ -22,7 +22,22 @@
 // };
 
 
+const firebaseConfig = {
+    apiKey: "AIzaSyCUDTrmdO2nW_H2CTk8S1M1MvD6euJpPLg",
+    authDomain: "register-7fc8f.firebaseapp.com",
+    databaseURL: "https://register-7fc8f-default-rtdb.firebaseio.com",
+    projectId: "register-7fc8f",
+    storageBucket: "register-7fc8f.appspot.com",
+    messagingSenderId: "1092275612543",
+    appId: "1:1092275612543:web:b933924f73d7b12e0cc84a"
+  };
 
+    // Initialize Firebase   
+  firebase.initializeApp(firebaseConfig);
+ 
+
+    // invokes firebase authentication  
+   const auth = firebase.auth();
 
 
 
