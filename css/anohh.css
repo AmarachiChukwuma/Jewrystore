@@ -360,6 +360,208 @@ hr{
   opacity: 1;
 }
 
+
+
+/* slide */
+#well{
+  margin-top: 11em;
+}
+/* #well .dem{
+float: left;
+margin-top: 12em;
+padding-left: 7em;
+} */
+.dem h4{
+  text-align: center;
+  /* -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate; */
+  font-size: 2em;
+  text-transform: uppercase;
+}
+#slider{
+  top: 0;
+  /* margin-top: 2em; */
+  margin: 0 auto;
+  width: 800px;
+  margin-bottom: 9em;
+  max-width: 100%;
+  margin-left: 37em;
+  left: 50em;
+  /* text-align: center; */
+}
+#slider input[type=radio]{
+  display: none;
+}
+#slider label{
+  cursor: pointer;
+  text-decoration: none;
+}
+#slides{
+  padding: 10px;
+  border: 3px solid #ccc;
+  background: #fff;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+#overflow{
+  width: 100%;
+  overflow: hidden;
+}
+#slide1:checked ~ #slides .inner{
+  margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner{
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner{
+  margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner{
+  margin-left: -300%;
+}
+#slides .inner{
+  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  width: 400%;
+  line-height: 0;
+  height: 500px;
+}
+
+#slides .slide{
+  width: 25%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+#slides .slide_1{
+  background: url(/image/pic\ \(13\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#slides .slide_2{
+  background: url(/image/pic\ \(17\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#slides .slide_3{
+  background: url(/image/pic\ \(14\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#slides .slide_4{
+  background: url(/image/pic\ \(7\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-content{
+  position: relative;
+  height: 20%;
+  margin-right: 7em;
+  z-index: 1;
+}
+.slide-content h2{
+  padding-bottom: 1.5em;
+  font-weight: bolder;
+}
+.slide-content h3{
+  font-size: 35px;
+  padding-bottom: 30px;
+  margin-bottom: 2rem;
+  color: #0a021c;
+}
+#controls{
+  margin: -180px 0 0 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+#controls label{
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: .4;
+}
+#controls label:hover{
+  opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide1:checked ~ #controls label:nth-child(3),
+#slide1:checked ~ #controls label:nth-child(4),
+#slide1:checked ~ #controls label:nth-child(1){
+  background: url("https://cdn-icons-png.flaticon.com/512/2989/2989988.png");
+  float: right;
+  margin: 0 -50px 0 0;
+  display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide1:checked ~ #controls label:nth-last-child(3),
+#slide1:checked ~ #controls label:nth-last-child(4),
+#slide1:checked ~ #controls label:nth-last-child(1){
+  background: url();
+  float: left;
+  margin: 0 0 0 -50px;
+  display: block;
+}
+#bullets{
+  margin: 150px 0 0;
+  text-align: center;
+}
+#bullets label{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4){
+  background: #444;
+}
+
+@media screen and (max-width: 900px) {
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide1:checked ~ #controls label:nth-child(3),
+  #slide1:checked ~ #controls label:nth-child(4),
+  #slide1:checked ~ #controls label:nth-child(1)
+  #slide1:checked ~ #controls label:nth-last-child(2),
+  #slide1:checked ~ #controls label:nth-last-child(3),
+  #slide1:checked ~ #controls label:nth-last-child(4),
+  #slide1:checked ~ #controls label:nth-last-child(1){
+  margin: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* new collection */
 
 .new_container{
