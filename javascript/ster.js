@@ -77,17 +77,17 @@ const firebaseConfig = {
 
 
 // keeping track of auth state
-// auth.onAuthStateChanged(user => {
-//    if (user) {
-//       console.log(user.email + "is logged in!");
-//       window.location = "index.html";
-//    } else {
-//       console.log('User is logged out!');
-//       alert('user loggedout!');
-//       // window.location = "index.html";
-//    }
+auth.onAuthStateChanged(user => {
+   if (user) {
+      console.log(user.email + "is logged in!");
+      window.location = "another.html";
+   } else {
+      console.log('User is logged out!');
+      alert('user loggedout!');
+      // window.location = "index.html";
+   }
    
-// });
+});
 
 
 
